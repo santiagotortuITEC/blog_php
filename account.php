@@ -5,8 +5,9 @@ include('includes/header.php');
 
 session_start();
 $email_user = ($_SESSION['email']);
+$id_user = ($_SESSION['user_id']) ;
 
-if (isset($_SESSION['email'])) { ?>
+if (isset($_SESSION['user_id'])) { ?>
     <pre></pre>
     <pre></pre>
     <?php

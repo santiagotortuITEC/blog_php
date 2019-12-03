@@ -6,8 +6,9 @@ sus publicaciones -->
 include('includes/header.php');
 session_start();
 $email_user = ($_SESSION['email']);
- 
-if (isset($_SESSION['email'])) { ?>
+$id_user = ($_SESSION['user_id']) ;
+
+if (isset($_SESSION['user_id'])) { ?>
     <pre></pre>
     <pre></pre>
     <?php
@@ -19,7 +20,7 @@ if (isset($_SESSION['email'])) { ?>
             ON users.id = publicaciones.user_id
             INNER JOIN categorias
             ON categorias.id = publicaciones.categoria_id
-            WHERE users.email = '$email_user' 
+            WHERE users.id = '$id_user' 
             ORDER BY publicaciones.creado DESC
         ";
         $result = mysqli_query($conection, $query);

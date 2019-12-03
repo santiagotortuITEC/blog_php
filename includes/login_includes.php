@@ -15,6 +15,8 @@ $result = mysqli_fetch_array($consulta);
 
 if($result['email'] == $email && $result['password'] == $password){
     $_SESSION['email'] = $email;
+    $_SESSION['user_id'] = $result['id'];
+    $_SESSION['firstname'] = $result['firstname'];
     header("location: /efi/index.php");
 }else{
     $_SESSION['error'] = 'Datos inválidos';

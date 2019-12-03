@@ -35,7 +35,7 @@ include('includes/header.php');
             ?>
             <!-- -->
             <div class="form-group">
-                <button class="btn btn-primary btn-lg btn-block">Iniciar Sesion</button>
+                <button class="btn btn-primary btn-lg btn-block">Iniciar Sesión</button>
             </div>
             <div class="row text-center mt-2">
                 <div class="container text-center">

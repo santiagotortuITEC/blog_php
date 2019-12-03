@@ -68,7 +68,7 @@
             <a class="nav-link btn btn-dark" href="/efi/publications.php">Publicaciones</a>
           </li>
           <li class="nav-item" id="tab-account">
-            <a class="nav-link btn btn-dark" href="/efi/account.php"> Mi cuenta </a>
+            <a class="nav-link btn btn-dark" href="/efi/account.php"> Mi cuenta (<?php echo $_SESSION['firstname']; ?>)</a>
           </li>
           <li class="nav-item" id="tab-exit">
             <a class="nav-link btn btn-dark " href="/efi/includes/exit.php">Cerrar sesión</a>
@@ -83,7 +83,7 @@
   } else {
     ?>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Blog </a>
+      <a class="navbar-brand" href="#"> Technology Blog </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
